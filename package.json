@@ -1,0 +1,14 @@
+{
+  "name": "avenue-fashion",
+  "private": true,
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1"
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "source": "src/index.html"
+}
