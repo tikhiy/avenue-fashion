@@ -1,6 +1,8 @@
+$navbar-height: 112px;
+
 .navbar {
   background-color: #f8f8f8;
-  height: 112px;
+  height: $navbar-height;
   display: grid;
   grid-template-columns: 1fr $max-width 1fr;
   grid-template-rows: 1fr;
@@ -14,10 +16,72 @@
     letter-spacing: 1.2px;
   }
 
-  nav {
+  > nav {
+    height: 100%;
     justify-self: end;
-    display: flex;
-    column-gap: 57px;
+
+    > ul {
+      column-gap: 57px;
+      display: flex;
+      height: 100%;
+
+      > li {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        position: relative;
+
+        &:hover nav,
+        nav:hover {
+          display: grid;
+        }
+
+        nav {
+          background-color: #f8f8f8;
+          box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14);
+          display: none;
+          grid-column-gap: 80px;
+          grid-row-gap: 30px;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+          left: 0;
+          padding: 0 30px 30px;
+          position: absolute;
+          top: $navbar-height;
+          z-index: 2;
+
+          .cell--wide {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            width: 400px;
+          }
+
+          .cell--list {
+            h1 {
+              color: #575153;
+              font: 700 to.rem(13px) "Montserrat";
+              text-transform: uppercase;
+              margin: 7px 0 27px;
+            }
+
+            ul {
+              margin: 0 0 27px;
+            }
+
+            li,
+            li a {
+              color: #727272;
+              font: 300 #{to.rem(14px)} / #{to.rem(20px)} "Montserrat";
+            }
+
+            li {
+              margin: 10px 0;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
   }
 
   a {

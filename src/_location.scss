@@ -6,16 +6,19 @@
 
   h1 {
     color: #575153;
-    font: 400 to.rem(18px) "Montserrat";
+    font: 700 to.rem(16px) "Montserrat";
+    letter-spacing: -1px;
+    margin: 20px 0;
   }
 
   h2 {
     color: #727272;
-    font: 400 to.rem(13px) "Montserrat";
+    font: 700 to.rem(11px) "Montserrat";
   }
 
   p {
     color: #8e8c8c;
-    font: 400 #{to.rem(15px)} / #{to.rem(22px)} "Roboto";
+    font: 400 #{to.rem(13px)} / #{to.rem(22px)} "Roboto";
+    margin: 14px 0;
   }
 }

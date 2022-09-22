@@ -16,12 +16,16 @@
   section {
     grid-column-end: 8;
     grid-column-start: 6;
-    padding: 0 44px;
+    padding: 18px 44px 0;
+
+    ul {
+      margin: 20px 0;
+    }
 
     li,
     li a {
       color: #8e8c8c;
-      font: 300 #{to.rem(14px)} / #{to.rem(22px)} "Montserrat";
+      font: 300 #{to.rem(12px)} / #{to.rem(22px)} "Montserrat";
     }
 
     li {
@@ -39,7 +43,7 @@
 
     .social {
       display: flex;
-      margin: 50px 0 90px;
+      margin: 60px 0 90px;
     }
 
     .social a {
@@ -51,7 +55,7 @@
       height: 30px;
       justify-content: center;
       width: 30px;
-      margin-right: 15px;
+      margin-right: 14px;
     }
   }
 }

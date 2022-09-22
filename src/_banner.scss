@@ -1,0 +1,26 @@
+.banner {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+
+  &--dark {
+    background-color: #333333;
+  }
+
+  &--cyan {
+    background-color: #00c8c8;
+  }
+
+  h1,
+  h1 a {
+    color: #ffffff;
+    font: 400 #{to.rem(36px)} / #{to.rem(48px)} "Montserrat";
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+
+  h1 i {
+    margin: 0 to.rem(20px);
+  }
+}

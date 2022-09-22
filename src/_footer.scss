@@ -9,21 +9,26 @@ footer {
   grid-row-gap: 0px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
+  padding: 50px 0 0;
 
   h1 {
     color: #575153;
-    font: 400 to.rem(13px) "Montserrat";
+    font: 700 to.rem(11px) "Montserrat";
     text-transform: uppercase;
+  }
+
+  ul {
+    margin: 27px 0 0;
   }
 
   li,
   li a {
     color: #727272;
-    font: 300 #{to.rem(14px)} / #{to.rem(20px)} "Montserrat";
+    font: 300 #{to.rem(12px)} / #{to.rem(20px)} "Montserrat";
   }
 
   li {
-    margin: 10px 0;
+    margin: 9px 0;
   }
 }
 
@@ -33,34 +38,7 @@ footer {
   grid-row-gap: 0px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  margin: 55px 0;
-}
-
-.banner {
-  align-items: center;
-  display: flex;
-  height: 200px;
-  justify-content: center;
-
-  &--dark {
-    background-color: #333333;
-  }
-
-  &--cyan {
-    background-color: #00c8c8;
-  }
-
-  h1,
-  h1 a {
-    color: #ffffff;
-    font: 400 #{to.rem(36px)} / #{to.rem(48px)} "Montserrat";
-    letter-spacing: 1.8px;
-    text-align: center;
-  }
-
-  h1 i {
-    margin: 0 to.rem(20px);
-  }
+  margin: 51px 0 55px;
 }
 
 .copyright {
