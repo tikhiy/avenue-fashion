@@ -1,0 +1,21 @@
+.location {
+  h1,
+  h2 {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: #575153;
+    font: 400 to.rem(18px) "Montserrat";
+  }
+
+  h2 {
+    color: #727272;
+    font: 400 to.rem(13px) "Montserrat";
+  }
+
+  p {
+    color: #8e8c8c;
+    font: 400 #{to.rem(15px)} / #{to.rem(22px)} "Roboto";
+  }
+}

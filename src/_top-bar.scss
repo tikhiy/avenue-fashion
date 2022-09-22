@@ -1,0 +1,33 @@
+.top-bar-container {
+  background-color: #333333;
+}
+
+.top-bar {
+  line-height: 45px;
+  display: flex;
+
+  &,
+  a {
+    font-size: to.rem(13px);
+    color: #999999;
+  }
+
+  a {
+    margin-left: 30px;
+  }
+
+  .currency {
+    margin-right: auto;
+  }
+
+  .shopping-cart {
+    background-color: #00c8c8;
+    color: #ffffff;
+    margin-left: 80px;
+    padding: 0 26px;
+
+    i:first-child {
+      margin: 0 10px;
+    }
+  }
+}

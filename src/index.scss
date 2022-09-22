@@ -1,5 +1,33 @@
-$color: #ff00ff;
+@use "sass-rem" as to;
+
+@import "variables";
+@import "top-bar";
+@import "navbar";
+@import "intro";
+@import "locations";
+@import "location";
+@import "location-details";
+@import "footer";
 
 body {
-  background-color: $color;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
 }

@@ -1,0 +1,9 @@
+$max-width: 1170px;
+
+@mixin line-clamp($value) {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $value;
+  display: -webkit-box;
+  line-clamp: $value;
+  overflow: hidden;
+}

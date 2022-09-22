@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #f8f8f8;
+  height: 112px;
+  display: grid;
+  grid-template-columns: 1fr $max-width 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+
+  .logo {
+    font-size: to.rem(24px);
+    letter-spacing: 1.2px;
+  }
+
+  nav {
+    justify-self: end;
+    display: flex;
+    column-gap: 57px;
+  }
+
+  a {
+    font-size: to.rem(13px);
+    color: #222222;
+  }
+}

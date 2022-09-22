@@ -1,0 +1,23 @@
+.locations {
+  padding: 62px 0;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+
+  section {
+    p {
+      @include line-clamp(4);
+    }
+
+    a {
+      display: inline-block;
+      padding: 0 30px;
+      border: 1px solid #737373;
+      color: #454647;
+      font: 400 #{to.rem(16px)} / 59px "Montserrat";
+      letter-spacing: 3.2px;
+    }
+  }
+}

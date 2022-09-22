@@ -1,0 +1,52 @@
+.intro {
+  background-image: url("header.png");
+  background-position: center;
+  color: #ffffff;
+  height: 450px;
+  position: relative;
+
+  h1 {
+    font: 400 to.rem(48px) "Montserrat";
+    letter-spacing: 2.4px;
+  }
+
+  h2 {
+    font: 400 to.rem(30px) "Montserrat";
+    letter-spacing: 1.5px;
+  }
+
+  .foreground {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .background {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+
+    &,
+    &::after {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+
+    &::after {
+      background-color: #333333;
+      content: "";
+      opacity: 0.75;
+    }
+
+    span {
+      color: #f8f8f8;
+      font: 700 #{to.rem(450px)} / #{to.rem(320px)} "Montserrat";
+      opacity: 0.22;
+    }
+  }
+}
