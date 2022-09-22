@@ -1,20 +1,32 @@
 @use "sass-rem" as to;
 
 @import "variables";
-@import "top-bar";
-@import "navbar";
-@import "intro";
-@import "locations";
-@import "location";
-@import "location-details";
-@import "footer";
 @import "banner";
+@import "footer";
+@import "input";
+@import "intro";
+@import "location-details";
+@import "location";
+@import "locations";
+@import "nav";
+@import "navbar";
+@import "sub-nav";
+@import "top-bar";
 
-body {
-  margin: 0;
+body,
+input,
+select {
   font-family: "Montserrat", sans-serif;
 }
 
+input,
+select {
+  background: none;
+  border: none;
+}
+
+body,
+input,
 ul {
   margin: 0;
   padding: 0;
@@ -26,6 +38,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.link:hover {
+  color: $cyan;
 }
 
 .container {

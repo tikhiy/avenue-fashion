@@ -1,0 +1,47 @@
+.sub-nav {
+  background-color: #f8f8f8;
+  box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14);
+  display: none;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  left: 0;
+  padding: 0 30px 30px;
+  position: absolute;
+  top: $navbar-height;
+  z-index: 2;
+
+  &:hover {
+    display: grid;
+  }
+
+  .cell--wide {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    width: 400px;
+  }
+
+  .cell--list {
+    h1 {
+      color: #575153;
+      font: 700 to.rem(13px) "Montserrat";
+      margin: 7px 0 27px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.sub-nav-list {
+  margin: 0 0 27px;
+}
+
+.sub-nav-list-item {
+  margin: 10px 0;
+  white-space: nowrap;
+}
+
+.sub-nav-link {
+  color: #727272;
+  font: 300 #{to.rem(14px)} / #{to.rem(20px)} "Montserrat";
+}

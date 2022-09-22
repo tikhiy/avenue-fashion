@@ -1,0 +1,26 @@
+.nav {
+  height: 100%;
+  justify-self: end;
+}
+
+.nav-list {
+  column-gap: 57px;
+  display: flex;
+  height: 100%;
+}
+
+.nav-list-item {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  position: relative;
+
+  &:hover .sub-nav {
+    display: grid;
+  }
+}
+
+.nav-link {
+  color: #222222;
+  font-size: to.rem(13px);
+}

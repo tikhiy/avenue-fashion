@@ -16,12 +16,14 @@
       <div class="top-bar-container">
         <div class="container top-bar">
           <div class="currency">
-            Currency: GBP
-            <i class="fa-solid fa-angle-down"></i>
+            Currency:
+            <select name="currency" id="currency">
+              <option value="GBP">GBP</option>
+            </select>
           </div>
           <div class="top-bar__links">
-            <a href="#">Register</a>
-            <a href="#">Sign In</a>
+            <a class="link" href="#">Register</a>
+            <a class="link" href="#">Sign In</a>
           </div>
           <a class="shopping-cart" href="#">
             <i class="fa-solid fa-cart-shopping"></i>
@@ -32,29 +34,53 @@
       </div>
       <div class="navbar">
         <span class="logo"><b>AVENUE</b> FASHION</span>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">MENS</a>
-              <nav>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="link nav-link" href="#">MENS</a>
+              <nav class="sub-nav">
                 <div class="cell cell--list">
                   <h1>CASUALS</h1>
-                  <ul>
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Hoodies & Sweatshirts</a></li>
-                    <li><a href="#">Polo Shirts</a></li>
-                    <li><a href="#">Sportswear</a></li>
-                    <li><a href="#">Trousers & Chinos</a></li>
-                    <li><a href="#">T-Shirts</a></li>
+                  <ul class="sub-nav-list">
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">Jackets</a>
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#"
+                        >Hoodies & Sweatshirts</a
+                      >
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">Polo Shirts</a>
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">Sportswear</a>
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#"
+                        >Trousers & Chinos</a
+                      >
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">T-Shirts</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="cell cell--list">
                   <h1>FORMAL</h1>
-                  <ul>
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Suits</a></li>
-                    <li><a href="#">Trousers</a></li>
+                  <ul class="sub-nav-list">
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">Jackets</a>
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">Shirts</a>
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">Suits</a>
+                    </li>
+                    <li class="sub-nav-list-item">
+                      <a class="link sub-nav-link" href="#">Trousers</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="cell cell--wide">
@@ -68,22 +94,22 @@
                 </div>
               </nav>
             </li>
-            <li>
-              <a href="#">WOMENS</a>
+            <li class="nav-list-item">
+              <a class="link nav-link" href="#">WOMENS</a>
             </li>
-            <li>
-              <a href="#">THE BRAND</a>
+            <li class="nav-list-item">
+              <a class="link nav-link" href="#">THE BRAND</a>
             </li>
-            <li>
-              <a href="#">LOCAL STORES</a>
+            <li class="nav-list-item">
+              <a class="link nav-link" href="#">LOCAL STORES</a>
             </li>
-            <li>
-              <a href="#">LOOK BOOK</a>
+            <li class="nav-list-item">
+              <a class="link nav-link" href="#">LOOK BOOK</a>
             </li>
           </ul>
         </nav>
-        <div>
-          <input type="text" placeholder="Search." />
+        <div class="input-container">
+          <input type="text" placeholder="Search.." />
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
@@ -160,15 +186,19 @@
           </li>
           <li>
             <i class="fa-solid fa-phone"></i>
-            <a href="tel:+0123-456-789">0123-456-789</a>
+            <a class="link" href="tel:+0123-456-789">0123-456-789</a>
           </li>
           <li>
             <i class="fa-solid fa-link"></i>
-            <a href="https://www.yourwebsite.com">www.yourwebsite.com</a>
+            <a class="link" href="https://www.yourwebsite.com"
+              >www.yourwebsite.com</a
+            >
           </li>
           <li>
             <i class="fa-regular fa-envelope"></i>
-            <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a>
+            <a class="link" href="mailto:support@yourwebsite.com"
+              >support@yourwebsite.com</a
+            >
           </li>
           <li>
             <i class="fa-regular fa-clock"></i>
@@ -189,43 +219,43 @@
           <section>
             <h1>Information</h1>
             <ul>
-              <li><a href="#">The brand</a></li>
-              <li><a href="#">Local stores</a></li>
-              <li><a href="#">Customer service</a></li>
-              <li><a href="#">Privacy & cookies</a></li>
-              <li><a href="#">Site map</a></li>
+              <li><a class="link" href="#">The brand</a></li>
+              <li><a class="link" href="#">Local stores</a></li>
+              <li><a class="link" href="#">Customer service</a></li>
+              <li><a class="link" href="#">Privacy & cookies</a></li>
+              <li><a class="link" href="#">Site map</a></li>
             </ul>
           </section>
           <section>
             <h1>Why buy from us</h1>
             <ul>
-              <li><a href="#">Shipping & returns</a></li>
-              <li><a href="#">Secure shopping</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Award winning</a></li>
-              <li><a href="#">Ethical trading</a></li>
+              <li><a class="link" href="#">Shipping & returns</a></li>
+              <li><a class="link" href="#">Secure shopping</a></li>
+              <li><a class="link" href="#">Testimonials</a></li>
+              <li><a class="link" href="#">Award winning</a></li>
+              <li><a class="link" href="#">Ethical trading</a></li>
             </ul>
           </section>
           <section>
             <h1>Your account</h1>
             <ul>
-              <li><a href="#">Sign in</a></li>
-              <li><a href="#">Register</a></li>
-              <li><a href="#">View cart</a></li>
-              <li><a href="#">View your lookbook</a></li>
-              <li><a href="#">Track an order</a></li>
-              <li><a href="#">Update information</a></li>
+              <li><a class="link" href="#">Sign in</a></li>
+              <li><a class="link" href="#">Register</a></li>
+              <li><a class="link" href="#">View cart</a></li>
+              <li><a class="link" href="#">View your lookbook</a></li>
+              <li><a class="link" href="#">Track an order</a></li>
+              <li><a class="link" href="#">Update information</a></li>
             </ul>
           </section>
           <section>
             <h1>Lookbook</h1>
             <ul>
-              <li><a href="#">Latest posts</a></li>
-              <li><a href="#">Men’s lookbook</a></li>
-              <li><a href="#">Women’s lookbook</a></li>
-              <li><a href="#">Lookbooks RSS feed</a></li>
-              <li><a href="#">View your lookbook</a></li>
-              <li><a href="#">Delete your lookbook</a></li>
+              <li><a class="link" href="#">Latest posts</a></li>
+              <li><a class="link" href="#">Men’s lookbook</a></li>
+              <li><a class="link" href="#">Women’s lookbook</a></li>
+              <li><a class="link" href="#">Lookbooks RSS feed</a></li>
+              <li><a class="link" href="#">View your lookbook</a></li>
+              <li><a class="link" href="#">Delete your lookbook</a></li>
             </ul>
           </section>
           <section>
@@ -234,10 +264,13 @@
               <li>
                 Head Office: Avenue Fashion, 180-182 Regent Street, London.
               </li>
-              <li>Telephone: <a href="tel:+0123-456-789">0123-456-789</a></li>
+              <li>
+                Telephone:
+                <a class="link" href="tel:+0123-456-789">0123-456-789</a>
+              </li>
               <li>
                 Email:
-                <a href="mailto:support@yourwebsite.com"
+                <a class="link" href="mailto:support@yourwebsite.com"
                   >support@yourwebsite.com</a
                 >
               </li>

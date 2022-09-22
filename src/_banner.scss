@@ -5,11 +5,11 @@
   justify-content: center;
 
   &--dark {
-    background-color: #333333;
+    background-color: $dark;
   }
 
   &--cyan {
-    background-color: #00c8c8;
+    background-color: $cyan;
   }
 
   h1,

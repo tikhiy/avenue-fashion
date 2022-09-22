@@ -1,19 +1,20 @@
 .top-bar-container {
-  background-color: #333333;
+  background-color: $dark;
 }
 
 .top-bar {
-  line-height: 45px;
   display: flex;
+  line-height: 45px;
 
   &,
-  a {
-    font-size: to.rem(13px);
+  a,
+  select {
     color: #999999;
+    font-size: to.rem(13px);
   }
 
   a {
-    margin-left: 30px;
+    margin-left: 33px;
   }
 
   .currency {
@@ -21,13 +22,19 @@
   }
 
   .shopping-cart {
-    background-color: #00c8c8;
+    background-color: $cyan;
     color: #ffffff;
     margin-left: 80px;
-    padding: 0 26px;
+    padding: 0 24px;
 
     i:first-child {
-      margin: 0 10px;
+      font-size: 16px;
+      margin: 0 20px 0 0;
+    }
+
+    i:last-child {
+      font-size: 9px;
+      margin: 0 0 0 5px;
     }
   }
 }
