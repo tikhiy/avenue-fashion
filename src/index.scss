@@ -53,6 +53,14 @@ a {
 }
 
 .container {
-  max-width: $max-width;
+  max-width: var(--max-width);
   margin: 0 auto;
+}
+
+:root {
+  --max-width: 900px;
+
+  @media (min-width: 1920px) {
+    --max-width: 1170px;
+  }
 }

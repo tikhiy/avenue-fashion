@@ -3,7 +3,7 @@
   display: grid;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-template-columns: 1fr repeat(5, #{$max-width * 0.2}) 1fr;
+  grid-template-columns: 1fr repeat(5, calc(var(--max-width) / 5)) 1fr;
   grid-template-rows: 1fr;
 
   iframe {
