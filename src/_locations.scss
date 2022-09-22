@@ -1,10 +1,10 @@
 .locations {
-  padding: 37px 0 50px;
   display: grid;
   grid-column-gap: 30px;
   grid-row-gap: 0px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  padding: 37px 0 50px;
 
   section {
     p {
@@ -12,13 +12,20 @@
     }
 
     a {
-      display: inline-block;
-      padding: 0 30px;
       border: 1px solid #737373;
       color: #454647;
+      display: inline-block;
       font: 400 #{to.rem(16px)} / 59px "Montserrat";
       letter-spacing: 3.2px;
       margin: 12px 0;
+      padding: 0 30px;
+      transition-property: background-color, border-color, color;
+
+      &:hover {
+        background-color: $cyan;
+        border-color: $cyan;
+        color: #f8f8f8;
+      }
     }
   }
 }

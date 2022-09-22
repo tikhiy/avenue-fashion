@@ -25,6 +25,10 @@ select {
   border: none;
 }
 
+select {
+  cursor: pointer;
+}
+
 body,
 input,
 ul {
@@ -40,8 +44,12 @@ a {
   text-decoration: none;
 }
 
-.link:hover {
-  color: $cyan;
+.link {
+  transition: color 50ms ease-in-out;
+
+  &:hover {
+    color: $cyan;
+  }
 }
 
 .container {
