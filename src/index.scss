@@ -13,6 +13,10 @@
 @import "sub-nav";
 @import "top-bar";
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 input,
 select {

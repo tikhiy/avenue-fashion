@@ -25,20 +25,25 @@
     li,
     li a {
       color: #8e8c8c;
-      font: 300 #{to.rem(12px)} / #{to.rem(22px)} "Montserrat";
+      font: 300 #{to.rem(12px)} "Montserrat";
+    }
+
+    li,
+    li a,
+    li i {
+      line-height: to.rem(22px);
     }
 
     li {
-      position: relative;
-      padding-left: 25px;
       margin: 10px 0;
+      padding: 0 0 0 25px;
+      position: relative;
     }
 
     li i {
-      font-size: to.rem(14px);
-      line-height: to.rem(22px);
-      position: absolute;
+      font-size: to.rem(12px);
       left: 0;
+      position: absolute;
     }
 
     .social {
